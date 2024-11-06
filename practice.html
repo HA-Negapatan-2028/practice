@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #link1:link {
+            color: blue;
+            background-color: lightgray;
+            text-decoration: none;
+        }
+        #link1:visited {
+            color: purple;
+            background-color: lightyellow;
+        }
+        #link1:hover {
+            color: white;
+            background-color: darkblue;
+        }
+        #link1:active {
+            color: yellow;
+            background-color: black;
+        }
+
+        #link2:link {
+            color: red;
+            background-color: lightgreen;
+            text-decoration: none;
+        }
+        #link2:visited {
+            color: orange;
+            background-color: lightblue;
+        }
+        #link2:hover {
+            color: white;
+            background-color: darkred;
+        }
+        #link2:active {
+            color: green;
+            background-color: pink;
+        }
+
+        #div1, #div2 {
+            padding: 20px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#" id="link1" onclick="changeStyles()">Button One</a><br><br>
+    <a href="#" id="link2" onclick="changeBorder2()">Button Two</a><br><br>
+    <div id="div1">First DIV element</div>
+    <div id="div2">Second DIV element</div>
+
+    <script>
+        function changeStyles() {
+            document.getElementById("div1").style.backgroundColor = "lightblue";
+            document.getElementById("div1").style.color = "darkblue";
+        }
+        function changeBorder2() {
+            document.getElementById("div2").style.border = "10px dotted green";
+			document.getElementById("div2").style.display = "collapse";
+        }
+    </script>
+
+</body>
+</html>
